@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e07c7c;
+}
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav a {
+    color: #e2a1a1;
+    text-decoration: none;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+
+a {
+    color: #ffffff; /* Màu chữ trắng cho liên kết */
+    text-decoration: none; /* Xóa gạch chân */
+}
+
+@keyframes colorChange {
+    0% { color: #ff0000; }   /* Đỏ */
+    14% { color: #ff7f00; }  /* Cam */
+    28% { color: #ffff00; }  /* Vàng */
+    42% { color: #7fff00; }  /* Xanh lá nhạt */
+    57% { color: #00ff7f; }  /* Xanh lục */
+    71% { color: #00ffff; }  /* Cyan */
+    85% { color: #007fff; }  /* Xanh dương nhạt */
+    100% { color: #0000ff; } /* Xanh dương */
+}
+
+h1 , h5, a {
+    animation: colorChange 2s infinite; /* Thay đổi màu trong 5 giây, lặp lại vô hạn */
+}
+
+
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #ffb6b6;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.upload-form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 10px;
+}
+
+input, textarea, button {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #2a28a7;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+@media (max-width: 600px) {
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 5px 0;
+    }
+}
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    width: calc(33.333% - 20px); /* 3 sản phẩm trên mỗi hàng */
+    background-color: #fff;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input, .contact-form textarea, .contact-form button {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+

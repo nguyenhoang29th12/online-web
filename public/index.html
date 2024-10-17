@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng tải sản phẩm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>chợ thập cẩm</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="products.html">Sản phẩm</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Đăng tải sản phẩm</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data" class="upload-form">
+            <label for="productName">Tên sản phẩm:</label>
+            <input type="text" id="productName" name="productName" required>
+        
+            <label for="productDescription">Mô tả sản phẩm:</label>
+            <textarea id="productDescription" name="productDescription" required></textarea>
+        
+            <label for="productPrice">Giá tiền:</label>
+            <input type="number" id="productPrice" name="productPrice" required>
+        
+            <label for="userName">Tên người đăng:</label>
+            <input type="text" id="userName" name="userName" required>
+        
+            <label for="productImage">Hình ảnh sản phẩm:</label>
+            <input type="file" id="productImage" name="productImage" accept="image/*" required>
+        
+            <button type="submit">Đăng tải</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Nguyen Hoang LLC.</p>
+    </footer>
+    <div class="col-lg-3 col-md-6 mb-4 mb-md-0 text-center">
+        <h5 class="text-uppercase">Theo dõi chúng tôi</h5>
+        <ul class="list-unstyled">
+            <li><a href="#" class="text-white">Youtube</a></li>
+            <li><a href="https://www.Facebook.com/bomaytenhoang" class="text-white">Facebook</a></li>
+            <li><a href="3" class="text-white">Twitter</a></li>
+            <li><a href="#" class="text-white">Instagram</a></li>
+        </ul>
+    </div>
+</body>
+</html>
